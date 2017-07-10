@@ -117,8 +117,8 @@ trait CommitterFactory extends Closeable {
     *
     * @return
     */
-  def createFilter(): Filter = {
-    new FilterTopicsFactory().createFilter()
+  def createTopicFilter(): TopicFilter = {
+    new TopicFilter()
   }
 
   val DefaultNoDataBackoffStrategy =
